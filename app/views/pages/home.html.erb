@@ -1,16 +1,24 @@
+<% if user_signed_in? %>
+
+<div class="hero-unit">
+<p><h1>Hello Pearl Seeker</h1></p>
+</div>
+
+<% else %>
+
 <div class="hero-unit">
   
-	<h1>Welcome to Sample App!</h1>
+	<h1>Welcome to HoodMapper</h1>
 
 	<p>
-		You found the home page for the sample app. Now check out: 
-		<%= link_to "Google", "http://www.google.com" %>
+		Searching for The Pearl, Under the Hood 
 	</p>
 
 	<p> 
-		<%= link_to "Sign Up Now!", "#", class: "btn btn-primary btn-large" %>
+		 <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 	</p>
 
 
 </div>
 
+<% end %>
