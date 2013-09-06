@@ -1,7 +1,7 @@
 <% if user_signed_in? %>
 
 <div class="hero-unit">
-<p><h1>Hello Shark Finder</h1></p>
+<p><h1>Hey, You Look Familiar</h1></p>
 </div>
 
 <% else %>
@@ -16,6 +16,7 @@
 
 	<p> 
 		 <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+		 <%= link_to "Sign In", new_user_session_path, class: "btn btn-info btn-large" %>
 	</p>
 
 
